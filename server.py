@@ -1,5 +1,5 @@
 import query_manager
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 
@@ -13,6 +13,16 @@ def get_dictionary():
     dictionary = query_manager.dictionary()
 
     return render_template('dictionary.html', dictionary=dictionary)
+
+
+@app.route('/uj-szo', methods=['GET', 'POST'])
+def add_new_dictionary_element():
+
+    if request.method == "POST":
+        query_manager.add_new_dictionary_element()
+        return redirect('/szotar')
+    else:
+        return render_template('dictionary_form.html')
 
 
 if __name__ == "__main__":
