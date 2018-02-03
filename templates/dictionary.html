@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Szótár</title>
+    <link rel="stylesheet" href="/static/css/sidenav.css">
+    <link rel="stylesheet" href="/static/css/topnav.css">
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="/" class="active">Főoldal</a>
+  <a href="/kedvenc-tetel">Kedvenc tételek</a>
+  <a href="/szotar">Szótár</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<div class="vertical-menu">
+    <form action="/action_page.php">
+      <input type="text" name="search" placeholder="Keresés"><br>
+      <input type="submit" value="Elküld">
+    </form>
+  <a href="/python">Python</a>
+    <a href="/flask-jinja">Flask & Jinja</a>
+  <a href="/javascript">Javascript</a>
+  <a href="/sql">SQL</a>
+  <a href="/html">HTML</a>
+    <a href="/css">CSS</a>
+    <a href="/git">Git</a>
+</div>
+<div class="center-text">
+    <h1>Szótár</h1>
+    <table id="dictionary">
+        <tr>
+            <th>
+                Magyar
+            </th>
+            <th>
+                Angol
+            </th>
+            <th>
+                Jelentés
+            </th>
+        </tr>
+            {% for data in dictionary %}
+        <tr>
+            <td>
+                {{ data.hungarian_word }}
+            </td>
+            <td>
+                {{ data.english_word }}
+            </td>
+            <td>
+                {{ data.meaning }}
+            </td>
+        </tr>
+            {% endfor %}
+    </table>
+</div>
+</body>
+</html>

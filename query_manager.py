@@ -2,5 +2,10 @@ import database_common
 
 
 @database_common.connection_handler
-def searching(cursor):
-    pass
+def dictionary(cursor):
+    cursor.execute("""
+                    SELECT * FROM dictionary
+                    ORDER BY english_word;
+                   """,)
+    data = cursor.fetchall()
+    return data
