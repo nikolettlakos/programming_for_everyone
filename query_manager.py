@@ -53,3 +53,12 @@ def add_new_topic_element(cursor, title, body, topic_type):
                     'body': body,
                     'topic_type': topic_type})
 
+
+@database_common.connection_handler
+def get_rigth_topic(cursor, topic_type):
+    cursor.execute("""
+                    SELECT * FROM topic
+                    WHERE topic_type = %(topic_type)s; """,
+                   {'topic_type': topic_type})
+    data = cursor.fetchall()
+    return data

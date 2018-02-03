@@ -59,6 +59,12 @@ def add_new_topic():
         return render_template('new_topic_form.html')
 
 
+@app.route('/tananyag/<topic_type>', methods=['GET', 'POST'])
+def get_topic(topic_type):
+    datas = query_manager.get_rigth_topic(topic_type)
+    return render_template('topic.html', datas=datas)
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,
