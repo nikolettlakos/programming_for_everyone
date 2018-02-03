@@ -16,10 +16,8 @@ def dictionary(cursor):
 
 
 @database_common.connection_handler
-def add_new_dictionary_element(cursor):
-    hungarian = request.form['hungarian']
-    english = request.form['english']
-    meaning = request.form['meaning']
+def add_new_dictionary_element(cursor, hungarian, english, meaning):
+
     cursor.execute('''INSERT INTO  dictionary(hungarian_word, english_word, meaning) 
                       VALUES (%(hungarian)s, %(english)s, %(meaning)s);''',
                    {'hungarian': hungarian,
@@ -35,10 +33,8 @@ def delete_element_form_dictionary(cursor, dictionary_id):
 
 
 @database_common.connection_handler
-def edit_element_form_dictionary(cursor, dictionary_id):
-    hungarian_word = request.form['hungarian']
-    english_word = request.form['english']
-    meaning = request.form['meaning']
+def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_word, meaning):
+
     cursor.execute(''' UPDATE dictionary
                       SET hungarian_word = %(hungarian_word)s, english_word = %(english_word)s, meaning = %(meaning)s
                       WHERE dictionary_id = %(id)s;''',
@@ -47,4 +43,13 @@ def edit_element_form_dictionary(cursor, dictionary_id):
                     'meaning': meaning,
                     'id': dictionary_id})
 
+
+@database_common.connection_handler
+def add_new_topic_element(cursor, title, body, topic_type):
+
+    cursor.execute('''INSERT INTO  topic(title, body, topic_type) 
+                      VALUES (%(title)s, %(body)s, %(topic_type)s);''',
+                   {'title': title,
+                    'body': body,
+                    'topic_type': topic_type})
 
