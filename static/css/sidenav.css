@@ -3,7 +3,7 @@
 }
 
 .vertical-menu a {
-    background-color: #eee;
+    background-color: #dbdbdb;
     color: black;
     display: block;
     padding: 12px;
@@ -19,6 +19,11 @@
     color: white;
 }
 
+.vertical-menu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
 .vertical-menu form {
-    background-color: #eee;
+    background-color: #dbdbdb;
 }
