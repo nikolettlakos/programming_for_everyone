@@ -48,17 +48,17 @@
             {% for data in dictionary %}
         <tr>
             <td>
-                <a href="/"><img style="width: 35px" align="center" onclick="confirm('Biztos törölni akarod?')" src="http://icons.iconarchive.com/icons/martz90/circle/512/trash-icon.png"></a>
+                <a href="/szotar/{{ data.dictionary_id}}/torles"><img style="width: 35px" align="center" onclick="confirm('Biztos törölni akarod?')" src="http://icons.iconarchive.com/icons/martz90/circle/512/trash-icon.png"></a>
                 <a href="/"><img style="width: 35px" align="center" src="http://www.athletesnest.com/Kendo/Browsers/Images/Image?path=edit%20icon%20green.png"></a>
             </td>
             <td>
-                {{ data.hungarian_word }}
+                {{ data.hungarian_word|safe }}
             </td>
             <td>
-                {{ data.english_word }}
+                {{ data.english_word|safe }}
             </td>
             <td>
-                {{ data.meaning }}
+                {{ data.meaning|safe }}
             </td>
         </tr>
             {% endfor %}

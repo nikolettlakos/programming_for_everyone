@@ -25,6 +25,12 @@ def add_new_dictionary_element():
         return render_template('dictionary_form.html')
 
 
+@app.route('/szotar/<id_dictionary>/torles', methods=['GET', 'POST'])
+def delete_dictionary_element(id_dictionary):
+    query_manager.delete_element_form_dictionary(id_dictionary)
+    return redirect('/szotar')
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,

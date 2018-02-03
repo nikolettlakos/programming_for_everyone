@@ -25,3 +25,10 @@ def add_new_dictionary_element(cursor):
                    {'hungarian': hungarian,
                     'english': english,
                     'meaning': meaning})
+
+
+@database_common.connection_handler
+def delete_element_form_dictionary(cursor, dictionary_id):
+    cursor.execute(''' DELETE FROM dictionary
+                      WHERE dictionary_id = %(id)s;''',
+                   {'id': dictionary_id})
