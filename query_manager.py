@@ -32,3 +32,19 @@ def delete_element_form_dictionary(cursor, dictionary_id):
     cursor.execute(''' DELETE FROM dictionary
                       WHERE dictionary_id = %(id)s;''',
                    {'id': dictionary_id})
+
+
+@database_common.connection_handler
+def edit_element_form_dictionary(cursor, dictionary_id):
+    hungarian_word = request.form['hungarian']
+    english_word = request.form['english']
+    meaning = request.form['meaning']
+    cursor.execute(''' UPDATE dictionary
+                      SET hungarian_word = %(hungarian_word)s, english_word = %(english_word)s, meaning = %(meaning)s
+                      WHERE dictionary_id = %(id)s;''',
+                   {'hungarian_word': hungarian_word,
+                    'english_word': english_word,
+                    'meaning': meaning,
+                    'id': dictionary_id})
+
+

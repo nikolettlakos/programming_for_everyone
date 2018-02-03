@@ -31,6 +31,15 @@ def delete_dictionary_element(id_dictionary):
     return redirect('/szotar')
 
 
+@app.route('/szotar/<id_dictionary>/szerkesztes', methods=['GET', 'POST'])
+def edit_dictionary_element(id_dictionary):
+    if request.method == 'POST':
+        query_manager.edit_element_form_dictionary(id_dictionary)
+        return redirect('/szotar')
+    else:
+        return render_template('dictionary_form.html')
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,
