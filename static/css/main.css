@@ -1,3 +1,6 @@
-body {
-
+.center-text {
+    position: absolute;
+    left: 300px;
+    top: 50px;
+    width: 1000px;
 }
