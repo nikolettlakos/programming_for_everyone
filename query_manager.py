@@ -73,3 +73,21 @@ def get_rigth_lesson(cursor, topic_type, topic_id):
                     'topic_id': topic_id})
     data = cursor.fetchall()
     return data
+
+
+@database_common.connection_handler
+def add_topic_to_favourites(cursor, topic_type, topic_id, fav_or_not):
+    cursor.execute(''' UPDATE topic
+                      SET fav = %(fav)s
+                      WHERE topic_type = %(topic_type)s AND topic_id = %(topic_id)s;''',
+                   {'topic_type': topic_type,
+                    'topic_id': topic_id,
+                    'fav': fav_or_not})
+
+@database_common.connection_handler
+def get_favs(cursor):
+    cursor.execute(''' SELECT * FROM topic
+                    WHERE fav = 1
+                    ORDER BY topic_type ASC;''',)
+    data = cursor.fetchall()
+    return data

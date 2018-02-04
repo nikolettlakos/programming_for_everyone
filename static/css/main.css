@@ -6,6 +6,7 @@
 }
 
 body {
+    color: #514655;
     background-image: url("https://3.bp.blogspot.com/-f2XX6_CJNNc/VCaHU7fHwJI/AAAAAAAAGig/ORo4Kah5u-Q/s1600/simple-gray-texture.jpg");
     font-family: 'Ubuntu', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
 }
@@ -25,4 +26,9 @@ th {
 
 h1 {
     color: #275a46;
+}
+
+a {
+    color: #67596b;
+    text-decoration: none;
 }

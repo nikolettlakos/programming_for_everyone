@@ -10,7 +10,7 @@
 <body>
 <div class="topnav" id="myTopnav">
   <a href="/" class="active">Főoldal</a>
-  <a href="/kedvenc-tetel">Kedvenc tételek</a>
+  <a href="/kedvencek">Kedvenc tételek</a>
   <a href="/szotar">Szótár</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
@@ -33,7 +33,12 @@
     {% for data in datas %}
         <ul style="list-style-type: none">
             <li>
-                <input type="checkbox" id="hack" /><label for="hack"></label>
+                {% if data.fav == 0 %}
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy a kedvencekhez adod?')"><img style="width: 20px" src="http://www.clker.com/cliparts/2/4/T/f/0/4/star-grey-hi.png"></a>
+                {% else %}
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy törlöd a kedvencek közül?')"><img style="width: 20px" src="http://www.clker.com/cliparts/t/2/A/5/2/O/star-green-favorite-hi.png"></a>
+                {% endif %}
+                <input type="checkbox" id="hack"/><label for="hack"></label>
                 <a href="{{data.topic_type}}/{{ data.topic_id }}">{{ data.title }}</a>
             </li>
         </ul>

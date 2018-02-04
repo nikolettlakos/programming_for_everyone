@@ -71,6 +71,24 @@ def get_lesson(topic_type, topic_id):
     return render_template('lesson.html', datas=datas)
 
 
+@app.route('/tananyag/<topic_type>/<topic_id>/kedvencnek-jeloles', methods=['GET', 'POST'])
+def add_topic_to_fav(topic_type, topic_id):
+    datas = query_manager.get_rigth_lesson(topic_type, topic_id)
+    for data in datas:
+        if data['fav'] == 0:
+            query_manager.add_topic_to_favourites(topic_type, topic_id, 1)
+            return redirect('/kedvencek')
+        else:
+            query_manager.add_topic_to_favourites(topic_type, topic_id, 0)
+            return redirect('/kedvencek')
+
+
+@app.route('/kedvencek', methods=['GET', 'POST'])
+def fav_page():
+    favs = query_manager.get_favs()
+    return render_template('fav.html', favs=favs)
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,

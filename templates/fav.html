@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lecke</title>
+    <title>Kedvencek</title>
     <link rel="stylesheet" href="/static/css/sidenav.css">
     <link rel="stylesheet" href="/static/css/topnav.css">
     <link rel="stylesheet" href="/static/css/main.css">
@@ -29,9 +29,13 @@
     <a href="/tananyag/git">Git</a>
 </div>
 <div class="center-text">
-    {% for data in datas %}
-        <h1>{{ data.title }}</h1>
-        {{ data.body|safe }}
+    <h1>Kedvencnek jelölt tananyagok</h1>
+    {% for fav in favs %}
+    <ul style="list-style-type: circle">
+        <li>
+            <a href="/tananyag/{{ fav.topic_type}}/{{ fav.topic_id }}">{{ fav.title }}</a>
+        </li>
+    </ul>
     {% endfor %}
 </div>
 </body>
