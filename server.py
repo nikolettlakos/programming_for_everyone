@@ -65,6 +65,12 @@ def get_topic(topic_type):
     return render_template('topic.html', datas=datas)
 
 
+@app.route('/tananyag/<topic_type>/<topic_id>', methods=['GET', 'POST'])
+def get_lesson(topic_type, topic_id):
+    datas = query_manager.get_rigth_lesson(topic_type, topic_id)
+    return render_template('lesson.html', datas=datas)
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,

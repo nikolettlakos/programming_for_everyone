@@ -62,3 +62,14 @@ def get_rigth_topic(cursor, topic_type):
                    {'topic_type': topic_type})
     data = cursor.fetchall()
     return data
+
+
+@database_common.connection_handler
+def get_rigth_lesson(cursor, topic_type, topic_id):
+    cursor.execute("""
+                    SELECT * FROM topic
+                    WHERE topic_type = %(topic_type)s AND topic_id = %(topic_id)s; """,
+                   {'topic_type': topic_type,
+                    'topic_id': topic_id})
+    data = cursor.fetchall()
+    return data
