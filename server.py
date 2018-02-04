@@ -89,6 +89,18 @@ def fav_page():
     return render_template('fav.html', favs=favs)
 
 
+@app.route('/tananyag/<topic_type>/<topic_id>/megtanult', methods=['GET', 'POST'])
+def add_topic_to_learnt(topic_type, topic_id):
+    datas = query_manager.get_rigth_lesson(topic_type, topic_id)
+    for data in datas:
+        if data['learnt'] == 0:
+            query_manager.learnt_update(topic_type, topic_id, 1)
+            return redirect('/')
+        else:
+            query_manager.learnt_update(topic_type, topic_id, 0)
+            return redirect('/')
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,

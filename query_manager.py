@@ -91,3 +91,14 @@ def get_favs(cursor):
                     ORDER BY topic_type ASC;''',)
     data = cursor.fetchall()
     return data
+
+
+@database_common.connection_handler
+def learnt_update(cursor, topic_type, topic_id, learnt):
+    cursor.execute(''' UPDATE topic
+                      SET learnt = %(learnt)s
+                      WHERE topic_type = %(topic_type)s AND topic_id = %(topic_id)s;''',
+                   {'topic_type': topic_type,
+                    'topic_id': topic_id,
+                    'learnt': learnt})
+

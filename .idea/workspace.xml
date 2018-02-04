@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1789fcc3-a8b1-4c7b-834d-8975e1d4bdc9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/fav.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/query_manager.py" afterPath="$PROJECT_DIR$/query_manager.py" />
       <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/templates/dictionary.html" afterPath="$PROJECT_DIR$/templates/dictionary.html" />
-      <change beforePath="$PROJECT_DIR$/templates/homepage.html" afterPath="$PROJECT_DIR$/templates/homepage.html" />
-      <change beforePath="$PROJECT_DIR$/templates/lesson.html" afterPath="$PROJECT_DIR$/templates/lesson.html" />
       <change beforePath="$PROJECT_DIR$/templates/topic.html" afterPath="$PROJECT_DIR$/templates/topic.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,12 +75,48 @@
       <file leaf-file-name="topic.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/topic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="36" column="240" lean-forward="false" selection-start-line="36" selection-start-column="240" selection-end-line="36" selection-end-column="240" />
+            <state relative-caret-position="382">
+              <caret line="38" column="178" lean-forward="false" selection-start-line="38" selection-start-column="176" selection-end-line="38" selection-end-column="178" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#1;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#2;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#3;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/query_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+                <marker date="1517733326304" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+                <marker date="1517733326304" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
+                <marker date="1517733326304" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
+                <marker date="1517733326304" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
+                <marker date="1517733326304" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
+                <marker date="1517733326304" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
+                <marker date="1517733326304" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
+                <marker date="1517733326304" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
+                <marker date="1517733326304" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
+                <marker date="1517733326304" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+                <marker date="1517733326304" expanded="true" signature="3271:3413" ph="UPDATE topic... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,13 +147,13 @@
         <option value="$PROJECT_DIR$/templates/dictionary_form.html" />
         <option value="$PROJECT_DIR$/templates/topic.py" />
         <option value="$PROJECT_DIR$/templates/new_topic_form.html" />
-        <option value="$PROJECT_DIR$/server.py" />
-        <option value="$PROJECT_DIR$/query_manager.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
         <option value="$PROJECT_DIR$/templates/homepage.html" />
         <option value="$PROJECT_DIR$/templates/fav.html" />
         <option value="$PROJECT_DIR$/templates/dictionary.html" />
         <option value="$PROJECT_DIR$/templates/lesson.html" />
+        <option value="$PROJECT_DIR$/query_manager.py" />
+        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/templates/topic.html" />
       </list>
     </option>
@@ -355,16 +386,17 @@
           <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1517732256556" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517732256556" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
-            <marker date="1517732256556" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
-            <marker date="1517732256556" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
-            <marker date="1517732256556" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517733326304" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
+            <marker date="1517733326304" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
+            <marker date="1517733326304" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
+            <marker date="1517733326304" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="3271:3413" ph="UPDATE topic... " />
           </folding>
         </state>
       </provider>
@@ -383,16 +415,17 @@
           <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1517732256556" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517732256556" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
-            <marker date="1517732256556" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
-            <marker date="1517732256556" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
-            <marker date="1517732256556" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517733326304" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
+            <marker date="1517733326304" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
+            <marker date="1517733326304" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
+            <marker date="1517733326304" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="3271:3413" ph="UPDATE topic... " />
           </folding>
         </state>
       </provider>
@@ -433,16 +466,17 @@
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
-            <marker date="1517732256556" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517732256556" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
-            <marker date="1517732256556" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
-            <marker date="1517732256556" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
-            <marker date="1517732256556" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517733326304" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
+            <marker date="1517733326304" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
+            <marker date="1517733326304" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
+            <marker date="1517733326304" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="3271:3413" ph="UPDATE topic... " />
           </folding>
         </state>
       </provider>
@@ -564,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://table:/a7a0f4fe/abb02353-0b02-41f7-8503-a44cf868e94d/programming_for_everyone.public.topic">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -611,36 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="85" column="13" lean-forward="false" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/query_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="84" column="39" lean-forward="true" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <marker date="1517732256556" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517732256556" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
-            <marker date="1517732256556" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
-            <marker date="1517732256556" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
-            <marker date="1517732256556" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
-            <marker date="1517732256556" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
-            <marker date="1517732256556" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/fav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -663,14 +660,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/a7a0f4fe/abb02353-0b02-41f7-8503-a44cf868e94d/programming_for_everyone.public.topic">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="100" column="30" lean-forward="false" selection-start-line="100" selection-start-column="30" selection-end-line="100" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/query_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <marker date="1517733326304" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517733326304" expanded="true" signature="454:588" ph="INSERT INTO dictionary" />
+            <marker date="1517733326304" expanded="true" signature="839:912" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1118:1304" ph="UPDATE dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1124:1304" ph="DELETE FROM dictionary... " />
+            <marker date="1517733326304" expanded="true" signature="1617:1728" ph="INSERT INTO topic" />
+            <marker date="1517733326304" expanded="true" signature="1973:2046" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2278:2379" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="2652:2788" ph="UPDATE topic... " />
+            <marker date="1517733326304" expanded="true" signature="3004:3101" ph="SELECT * FRO... topic" />
+            <marker date="1517733326304" expanded="true" signature="3271:3413" ph="UPDATE topic... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="36" column="240" lean-forward="false" selection-start-line="36" selection-start-column="240" selection-end-line="36" selection-end-column="240" />
+        <state relative-caret-position="382">
+          <caret line="38" column="178" lean-forward="false" selection-start-line="38" selection-start-column="176" selection-end-line="38" selection-end-column="178" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#1;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#2;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#3;n#li#0;n#ul#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
