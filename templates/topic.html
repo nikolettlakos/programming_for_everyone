@@ -29,10 +29,11 @@
     <a href="/tananyag/git">Git</a>
 </div>
 <div class="center-text">
-    <h1>It's not a bug, it's a feature</h1>
+    <h1>Let's say together: It's not a bug, it's a feature!</h1>
     {% for data in datas %}
-        <ul style="list-style-type: circle">
+        <ul style="list-style-type: none">
             <li>
+                <input type="checkbox" id="hack" /><label for="hack"></label>
                 <a href="{{data.topic_type}}/{{ data.topic_id }}">{{ data.title }}</a>
             </li>
         </ul>
