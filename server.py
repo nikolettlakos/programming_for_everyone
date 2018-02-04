@@ -71,6 +71,12 @@ def get_lesson(topic_type, topic_id):
     return render_template('lesson.html', datas=datas)
 
 
+@app.route('/tananyag/<topic_type>/<topic_id>/tananyag-torlese', methods=['GET', 'POST'])
+def delete_topic(topic_type, topic_id):
+    query_manager.delete_element_form_topic(topic_type, topic_id)
+    return redirect('/')
+
+
 @app.route('/tananyag/<topic_type>/<topic_id>/kedvencnek-jeloles', methods=['GET', 'POST'])
 def add_topic_to_fav(topic_type, topic_id):
     datas = query_manager.get_rigth_lesson(topic_type, topic_id)

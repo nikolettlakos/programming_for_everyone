@@ -33,6 +33,14 @@ def delete_element_form_dictionary(cursor, dictionary_id):
 
 
 @database_common.connection_handler
+def delete_element_form_topic(cursor, topic_type, topic_id):
+    cursor.execute(''' DELETE FROM topic
+                      WHERE topic_type = %(topic_type)s AND topic_id = %(topic_id)s''',
+                   {'topic_id': topic_id,
+                    'topic_type': topic_type})
+
+
+@database_common.connection_handler
 def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_word, meaning):
 
     cursor.execute(''' UPDATE dictionary

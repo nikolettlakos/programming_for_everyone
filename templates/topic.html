@@ -43,6 +43,7 @@
                 {% else %}
                     <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/megtanult"><img style="width: 30px" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/light-bulb-icon.png"></a>
                 {% endif %}
+                <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/tananyag-torlese" onclick="confirm('Biztos törlöd a tananyagot?')"><img style="width: 30px" src="http://icons.iconarchive.com/icons/martz90/circle/512/trash-icon.png"></a>
                 <a href="{{data.topic_type}}/{{ data.topic_id }}">{{ data.title }}</a>
             </li>
         </ul>
