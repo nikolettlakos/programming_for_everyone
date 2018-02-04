@@ -107,6 +107,13 @@ def add_topic_to_learnt(topic_type, topic_id):
             return redirect('/')
 
 
+@app.route('/talalat', methods=['GET', 'POST'])
+def searching():
+    search_phrase = request.args['search']
+    search_data = query_manager.searching(search_phrase)
+    return render_template('search_found.html', search_data=search_data)
+
+
 if __name__ == "__main__":
     app.run(
         debug=True,

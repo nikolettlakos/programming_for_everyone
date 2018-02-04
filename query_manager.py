@@ -110,3 +110,10 @@ def learnt_update(cursor, topic_type, topic_id, learnt):
                     'topic_id': topic_id,
                     'learnt': learnt})
 
+
+@database_common.connection_handler
+def searching(cursor, searching_phrase):
+    cursor.execute(''' SELECT topic.title, topic.body, dictionary.meaning FROM topic, dictionary
+                      WHERE topic.title LIKE %(searching_phrase)s OR topic.body LIKE %(searching_phrase)s OR dictionary.meaning LIKE %(searching_phrase)s;''',
+                   {'searching_phrase': '%' + searching_phrase + '%'})
+    return cursor.fetchall()
