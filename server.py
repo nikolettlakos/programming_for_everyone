@@ -1,5 +1,5 @@
 import query_manager
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 
@@ -112,6 +112,27 @@ def searching():
     search_phrase = request.args['search']
     search_data = query_manager.searching(search_phrase)
     return render_template('search_found.html', search_data=search_data)
+
+'''
+@app.route('/regisztracio', methods=['GET', 'POST'])
+def registration():
+    if request.method == "GET":
+        return render_template('registration.html', page_details=page_details)
+    else:
+        new_user = {
+                    'username': request.form['username'],
+                    'password': request.form['password'],
+                    'dt': datetime.now()
+                    }
+        reg_successful = data_manager.user_registration(new_user)
+        if reg_successful:
+            session['username'] = new_user['username']
+            user_id = data_manager.get_user_id_by_username(new_user)['id']
+            session['user_id'] = user_id
+            return redirect('/list')
+        else:
+            return redirect('/registration')
+'''
 
 
 if __name__ == "__main__":
