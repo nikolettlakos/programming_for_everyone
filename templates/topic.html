@@ -5,16 +5,16 @@
         <ul style="list-style-type: none">
             <li>
                 {% if data.fav == 0 %}
-                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy a kedvencekhez adod?')"><img style="width: 30px" src="http://www.clker.com/cliparts/2/4/T/f/0/4/star-grey-hi.png"></a>
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy a kedvencekhez adod?')"><i class="far fa-star"></i></a>
                 {% else %}
-                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy törlöd a kedvencek közül?')"><img style="width: 30px" src="http://www.clker.com/cliparts/t/2/A/5/2/O/star-green-favorite-hi.png"></a>
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy törlöd a kedvencek közül?')"><i class="fas fa-star"></i></a>
                 {% endif %}
                 {% if data.learnt == 0 %}
-                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/megtanult"><img style="width: 35px" src="https://cdn4.iconfinder.com/data/icons/social-communication/142/bulb-512.png"></a>
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/megtanult"><i class="fas fa-circle"></i></a>
                 {% else %}
-                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/megtanult"><img style="width: 30px" src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/light-bulb-icon.png"></a>
+                    <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/megtanult"><i class="fas fa-check-circle"></i></a>
                 {% endif %}
-                <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/tananyag-torlese" onclick="confirm('Biztos törlöd a tananyagot?')"><img style="width: 30px" src="http://icons.iconarchive.com/icons/martz90/circle/512/trash-icon.png"></a>
+                <a href="/tananyag/{{data.topic_type}}/{{data.topic_id}}/tananyag-torlese" onclick="confirm('Biztos törlöd a tananyagot?')"><i class="fas fa-trash-alt"></i></a>
                 <a href="{{data.topic_type}}/{{ data.topic_id }}">{{ data.title }}</a>
             </li>
         </ul>

@@ -3,15 +3,15 @@
 }
 
 .vertical-menu a {
-    background-color: #dbdbdb;
-    color: black;
+    background-color: rgba(76, 158, 159, 0.43);
+    color: rgba(10, 21, 21, 0.35);
     display: block;
     padding: 12px;
     text-decoration: none;
 }
 
 .vertical-menu a:hover {
-    background-color: #ccc;
+    background-color: #528586;
 }
 
 .vertical-menu a.active {
@@ -25,5 +25,5 @@
 }
 
 .vertical-menu form {
-    background-color: #dbdbdb;
+    background-color: rgba(76, 158, 159, 0.43);
 }

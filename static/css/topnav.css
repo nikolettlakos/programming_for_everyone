@@ -15,11 +15,11 @@
 
 .topnav a:hover {
     background-color: #ddd;
-    color: rgba(54, 134, 108, 0.51);
+    color: rgba(30, 115, 53, 0.64);
 }
 
 .active {
-    background-color: #3b987d;
+    background-color: rgba(76, 158, 159, 0.43);
     color: white;
 }
 
