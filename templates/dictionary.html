@@ -3,37 +3,41 @@
     <h1>Szótár</h1>
     <a href="/uj-szo"><button type="button" class="btn btn-light">Új kifejezés</button></a>
     <p>
-       <table id="dictionary">
-            <tr>
-                <th>
-                    Szerkesztés
-                </th>
-                <th>
-                    Magyar
-                </th>
-                <th>
-                    Angol
-                </th>
-                <th>
-                    Jelentés
-                </th>
-            </tr>
+       <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">
+                        Szerkesztés
+                    </th>
+                    <th scope="col">
+                        Magyar
+                    </th>
+                    <th scope="col">
+                        Angol
+                    </th>
+                    <th scope="col">
+                        Jelentés
+                    </th>
+                </tr>
+            </thead>
                 {% for data in dictionary %}
-            <tr>
-                <td>
-                    <a href="/szotar/{{ data.dictionary_id}}/torles" onclick="confirm('Biztos, hogy törölni szeretnéd?')"><i class="fas fa-trash-alt"></i></a>
-                    <a href="/szotar/{{ data.dictionary_id}}/szerkesztes"><i class="fas fa-pen-square"></i></a>
-                </td>
-                <td>
-                    {{ data.hungarian_word }}
-                </td>
-                <td>
-                    {{ data.english_word }}
-                </td>
-                <td>
-                    {{ data.meaning }}
-                </td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td scope="row">
+                        <a href="/szotar/{{ data.dictionary_id}}/torles" onclick="confirm('Biztos, hogy törölni szeretnéd?')"><i class="fas fa-trash-alt"></i></a>
+                        <a href="/szotar/{{ data.dictionary_id}}/szerkesztes"><i class="fas fa-pen-square"></i></a>
+                    </td>
+                    <td scope="row">
+                        {{ data.hungarian_word }}
+                    </td>
+                    <td scope="row">
+                        {{ data.english_word }}
+                    </td>
+                    <td scope="row">
+                        {{ data.meaning }}
+                    </td>
+                </tr>
+            </tbody>
                 {% endfor %}
         </table>
     </p>
