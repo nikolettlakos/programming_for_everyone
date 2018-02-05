@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1789fcc3-a8b1-4c7b-834d-8975e1d4bdc9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/templates/dictionary_form.html" afterPath="$PROJECT_DIR$/templates/dictionary_form.html" />
       <change beforePath="$PROJECT_DIR$/templates/layout_base.html" afterPath="$PROJECT_DIR$/templates/layout_base.html" />
-      <change beforePath="$PROJECT_DIR$/templates/new_topic_form.html" afterPath="$PROJECT_DIR$/templates/new_topic_form.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,20 +60,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="layout_base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="layout_base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
+            <state relative-caret-position="136">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/query_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
+            <state relative-caret-position="780">
               <caret line="116" column="105" lean-forward="false" selection-start-line="116" selection-start-column="105" selection-end-line="116" selection-end-column="105" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
@@ -133,8 +131,8 @@
         <option value="$PROJECT_DIR$/templates/topic.html" />
         <option value="$PROJECT_DIR$/templates/new_topic_form.html" />
         <option value="$PROJECT_DIR$/templates/efseg.html" />
-        <option value="$PROJECT_DIR$/templates/layout_base.html" />
         <option value="$PROJECT_DIR$/templates/dictionary_form.html" />
+        <option value="$PROJECT_DIR$/templates/layout_base.html" />
       </list>
     </option>
   </component>
@@ -600,17 +598,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="55" lean-forward="false" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/query_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
+        <state relative-caret-position="780">
           <caret line="116" column="105" lean-forward="false" selection-start-line="116" selection-start-column="105" selection-end-line="116" selection-end-column="105" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
@@ -627,6 +617,14 @@
             <marker date="1517842505319" expanded="true" signature="3588:3730" ph="UPDATE topic... " />
             <marker date="1517842505319" expanded="true" signature="3965:4192" ph="SELECT topic... topic" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
