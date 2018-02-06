@@ -39,8 +39,7 @@
         </nav>
         <div class="vertical-menu">
             <form action="/talalat">
-             <input class="form-control mr-sm-2" type="text" name="search" placeholder="Keresés">
-             <button class="btn btn-light" type="submit">Elküld</button>
+             <input onkeydown="if (event.keyCode == 13) { this.form.submit(); return false; }" class="form-control mr-sm-2" type="text" name="search" placeholder="Keresés">
             </form>
             <a href="/tananyag/python">Python</a>
             <a href="/tananyag/flask-jinja">Flask & Jinja</a>

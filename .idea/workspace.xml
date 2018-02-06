@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1789fcc3-a8b1-4c7b-834d-8975e1d4bdc9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/query_manager.py" afterPath="$PROJECT_DIR$/query_manager.py" />
-      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
-      <change beforePath="$PROJECT_DIR$/templates/lesson.html" afterPath="$PROJECT_DIR$/templates/lesson.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/templates/dictionary_form.html" afterPath="$PROJECT_DIR$/templates/dictionary_form.html" />
+      <change beforePath="$PROJECT_DIR$/templates/layout_base.html" afterPath="$PROJECT_DIR$/templates/layout_base.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -71,46 +71,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/query_manager.py">
+      <file leaf-file-name="layout_base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
-              <folding>
-                <marker date="1517943834122" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-                <marker date="1517943834122" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
-                <marker date="1517943834122" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
-                <marker date="1517943834122" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
-                <marker date="1517943834122" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
-                <marker date="1517943834122" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
-                <marker date="1517943834122" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
-                <marker date="1517943834122" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
-                <marker date="1517943834122" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
-                <marker date="1517943834122" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
-                <marker date="1517943834122" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
-                <marker date="1517943834122" expanded="true" signature="3558:3744" ph="UPDATE topic... " />
-                <marker date="1517943834122" expanded="true" signature="3992:4084" ph="SELECT * FRO... topic" />
-                <marker date="1517943834122" expanded="true" signature="4244:4358" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517943834122" expanded="true" signature="4529:4671" ph="UPDATE topic... " />
-                <marker date="1517943834122" expanded="true" signature="4906:5133" ph="SELECT topic... topic" />
-                <marker date="1517943834122" expanded="true" signature="5337:5415" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517943834122" expanded="true" signature="5588:5686" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517943834122" expanded="true" signature="5913:6046" ph="UPDATE topic... " />
-                <marker date="1517943834122" expanded="true" signature="6285:6428" ph="INSERT INTO rehearsal_question... " />
-                <marker date="1517943834122" expanded="true" signature="6689:6797" ph="DELETE FROM dictionary... " />
-              </folding>
+            <state relative-caret-position="425">
+              <caret line="34" column="34" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rehearsal_question.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/rehearsal_question.html">
+      <file leaf-file-name="dictionary_form.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/dictionary_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -121,18 +97,6 @@
             <state relative-caret-position="68">
               <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -177,8 +141,6 @@
         <option value="$PROJECT_DIR$/static/css/sidenav.css" />
         <option value="$PROJECT_DIR$/templates/registration.html" />
         <option value="$PROJECT_DIR$/templates/new_topic_form.html" />
-        <option value="$PROJECT_DIR$/templates/dictionary_form.html" />
-        <option value="$PROJECT_DIR$/templates/layout_base.html" />
         <option value="$PROJECT_DIR$/templates/dictionary.html" />
         <option value="$PROJECT_DIR$/templates/topic.html" />
         <option value="$PROJECT_DIR$/templates/fav.html" />
@@ -189,6 +151,8 @@
         <option value="$PROJECT_DIR$/templates/lesson.html" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/query_manager.py" />
+        <option value="$PROJECT_DIR$/templates/layout_base.html" />
+        <option value="$PROJECT_DIR$/templates/dictionary_form.html" />
       </list>
     </option>
   </component>
@@ -199,10 +163,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="4" />
-    <option name="width" value="649" />
-    <option name="height" value="764" />
+    <option name="x" value="1166" />
+    <option name="y" value="172" />
+    <option name="width" value="756" />
+    <option name="height" value="783" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -254,7 +218,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Codecool/dragula" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Codecool/wswp-ask-mate-vinipeto" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -335,7 +299,7 @@
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -595,14 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/dictionary_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/rehearsal_question_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -615,22 +571,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/sidenav.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="27" lean-forward="true" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -658,24 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lesson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/rehearsal_question.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -688,7 +610,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
+        <state relative-caret-position="90">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
           <folding>
             <marker date="1517943834122" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
@@ -713,6 +635,48 @@
             <marker date="1517943834122" expanded="true" signature="6285:6428" ph="INSERT INTO rehearsal_question... " />
             <marker date="1517943834122" expanded="true" signature="6689:6797" ph="DELETE FROM dictionary... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="76" column="30" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="82" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/sidenav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lesson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/layout_base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="35" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/dictionary_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
