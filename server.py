@@ -72,6 +72,16 @@ def get_lesson(topic_type, topic_id):
     return render_template('lesson.html', datas=datas)
 
 
+@app.route('/tananyag/<topic_type>/<topic_id>/tananyag-szerkesztese', methods=['GET', 'POST'])
+def edit_lesson(topic_type, topic_id):
+    if request.method == 'POST':
+        title = request.form['title']
+        body = request.form['body']
+        query_manager.edit_topic_element(topic_type, topic_id, title, body)
+        return redirect('/')
+    else:
+        return render_template('new_topic_form.html')
+
 @app.route('/tananyag/<topic_type>/<topic_id>/tananyag-torlese', methods=['GET', 'POST'])
 def delete_topic(topic_type, topic_id):
     query_manager.delete_element_form_topic(topic_type, topic_id)

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1789fcc3-a8b1-4c7b-834d-8975e1d4bdc9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" afterPath="$PROJECT_DIR$/static/css/main.css" />
+      <change beforePath="$PROJECT_DIR$/query_manager.py" afterPath="$PROJECT_DIR$/query_manager.py" />
+      <change beforePath="$PROJECT_DIR$/server.py" afterPath="$PROJECT_DIR$/server.py" />
+      <change beforePath="$PROJECT_DIR$/templates/lesson.html" afterPath="$PROJECT_DIR$/templates/lesson.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +15,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/programming_for_everyone$Unnamed.coverage" NAME="server Coverage Results" MODIFIED="1517432055633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/programming_for_everyone$server.coverage" NAME="server Coverage Results" MODIFIED="1517932754967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/programming_for_everyone$server.coverage" NAME="server Coverage Results" MODIFIED="1517943840196" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -62,39 +64,40 @@
         <item name="programming_for_everyone: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="rehearsal_question: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
+        <item name="topic: table" type="a93d6ac6:PostgresImplModel$LocalTable" />
       </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="query_manager.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/query_manager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="168" column="68" lean-forward="true" selection-start-line="168" selection-start-column="68" selection-end-line="168" selection-end-column="68" />
+            <state relative-caret-position="61">
+              <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
               <folding>
-                <marker date="1517942827625" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-                <marker date="1517942827625" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
-                <marker date="1517942827625" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
-                <marker date="1517942827625" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
-                <marker date="1517942827625" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
-                <marker date="1517942827625" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
-                <marker date="1517942827625" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
-                <marker date="1517942827625" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
-                <marker date="1517942827625" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
-                <marker date="1517942827625" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
-                <marker date="1517942827625" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
-                <marker date="1517942827625" expanded="true" signature="3513:3605" ph="SELECT * FRO... topic" />
-                <marker date="1517942827625" expanded="true" signature="3765:3879" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517942827625" expanded="true" signature="4050:4192" ph="UPDATE topic... " />
-                <marker date="1517942827625" expanded="true" signature="4427:4654" ph="SELECT topic... topic" />
-                <marker date="1517942827625" expanded="true" signature="4858:4936" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517942827625" expanded="true" signature="5109:5207" ph="SELECT * FRO... rehearsal_question" />
-                <marker date="1517942827625" expanded="true" signature="5434:5567" ph="UPDATE topic... " />
-                <marker date="1517942827625" expanded="true" signature="5806:5949" ph="INSERT INTO rehearsal_question... " />
-                <marker date="1517942827625" expanded="true" signature="6210:6318" ph="DELETE FROM dictionary... " />
+                <marker date="1517943834122" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+                <marker date="1517943834122" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
+                <marker date="1517943834122" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
+                <marker date="1517943834122" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
+                <marker date="1517943834122" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
+                <marker date="1517943834122" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
+                <marker date="1517943834122" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
+                <marker date="1517943834122" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
+                <marker date="1517943834122" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
+                <marker date="1517943834122" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
+                <marker date="1517943834122" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
+                <marker date="1517943834122" expanded="true" signature="3558:3744" ph="UPDATE topic... " />
+                <marker date="1517943834122" expanded="true" signature="3992:4084" ph="SELECT * FRO... topic" />
+                <marker date="1517943834122" expanded="true" signature="4244:4358" ph="SELECT * FRO... rehearsal_question" />
+                <marker date="1517943834122" expanded="true" signature="4529:4671" ph="UPDATE topic... " />
+                <marker date="1517943834122" expanded="true" signature="4906:5133" ph="SELECT topic... topic" />
+                <marker date="1517943834122" expanded="true" signature="5337:5415" ph="SELECT * FRO... rehearsal_question" />
+                <marker date="1517943834122" expanded="true" signature="5588:5686" ph="SELECT * FRO... rehearsal_question" />
+                <marker date="1517943834122" expanded="true" signature="5913:6046" ph="UPDATE topic... " />
+                <marker date="1517943834122" expanded="true" signature="6285:6428" ph="INSERT INTO rehearsal_question... " />
+                <marker date="1517943834122" expanded="true" signature="6689:6797" ph="DELETE FROM dictionary... " />
               </folding>
             </state>
           </provider>
@@ -103,8 +106,8 @@
       <file leaf-file-name="rehearsal_question.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/rehearsal_question.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="51">
+              <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="58" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
               </folding>
@@ -112,21 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <file leaf-file-name="lesson.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/lesson.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dictionary.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/dictionary.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="162" />
+            <state relative-caret-position="68">
+              <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -135,8 +128,8 @@
       <file leaf-file-name="server.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="150" column="62" lean-forward="true" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
+            <state relative-caret-position="418">
+              <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -159,6 +152,7 @@
     <findStrings>
       <find>abb</find>
       <find>abbreviation</find>
+      <find>edit</find>
       <find>delete</find>
     </findStrings>
   </component>
@@ -176,7 +170,6 @@
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.sql" />
         <option value="$PROJECT_DIR$/data/table_data.sql" />
         <option value="$PROJECT_DIR$/templates/homepage.html" />
-        <option value="$PROJECT_DIR$/templates/lesson.html" />
         <option value="$PROJECT_DIR$/templates/d.html" />
         <option value="$PROJECT_DIR$/templates/3r.html" />
         <option value="$PROJECT_DIR$/templates/search_found.html" />
@@ -191,10 +184,11 @@
         <option value="$PROJECT_DIR$/templates/fav.html" />
         <option value="$PROJECT_DIR$/templates/answer_for_question.html" />
         <option value="$PROJECT_DIR$/templates/rehearsal_question_form.html" />
-        <option value="$PROJECT_DIR$/query_manager.py" />
         <option value="$PROJECT_DIR$/templates/rehearsal_question.html" />
-        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/static/css/main.css" />
+        <option value="$PROJECT_DIR$/templates/lesson.html" />
+        <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/query_manager.py" />
       </list>
     </option>
   </component>
@@ -341,7 +335,7 @@
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -364,7 +358,7 @@
       <window_info id="SQL Generator" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="R Graphics" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26124704" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26066098" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -372,11 +366,11 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32826087" sideWeight="0.4978678" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921174" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27132195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="R Packages" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -408,26 +402,27 @@
         <state relative-caret-position="85">
           <caret line="5" column="8" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding>
-            <marker date="1517942827625" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517942827625" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
-            <marker date="1517942827625" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
-            <marker date="1517942827625" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
-            <marker date="1517942827625" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="3513:3605" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="3765:3879" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="4050:4192" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="4427:4654" ph="SELECT topic... topic" />
-            <marker date="1517942827625" expanded="true" signature="4858:4936" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="5109:5207" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="5434:5567" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="5806:5949" ph="INSERT INTO rehearsal_question... " />
-            <marker date="1517942827625" expanded="true" signature="6210:6318" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517943834122" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
+            <marker date="1517943834122" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
+            <marker date="1517943834122" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
+            <marker date="1517943834122" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="3558:3744" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="3992:4084" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="4244:4358" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="4529:4671" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="4906:5133" ph="SELECT topic... topic" />
+            <marker date="1517943834122" expanded="true" signature="5337:5415" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="5588:5686" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="5913:6046" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="6285:6428" ph="INSERT INTO rehearsal_question... " />
+            <marker date="1517943834122" expanded="true" signature="6689:6797" ph="DELETE FROM dictionary... " />
           </folding>
         </state>
       </provider>
@@ -600,14 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lesson.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/dictionary_form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -663,10 +650,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="78" column="35" lean-forward="false" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lesson.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="61" lean-forward="false" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/rehearsal_question.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+        <state relative-caret-position="51">
+          <caret line="3" column="37" lean-forward="false" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="58" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
           </folding>
@@ -675,48 +688,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/query_manager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="168" column="68" lean-forward="true" selection-start-line="168" selection-start-column="68" selection-end-line="168" selection-end-column="68" />
+        <state relative-caret-position="61">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="102" selection-end-column="34" />
           <folding>
-            <marker date="1517942827625" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
-            <marker date="1517942827625" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
-            <marker date="1517942827625" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
-            <marker date="1517942827625" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
-            <marker date="1517942827625" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
-            <marker date="1517942827625" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="3513:3605" ph="SELECT * FRO... topic" />
-            <marker date="1517942827625" expanded="true" signature="3765:3879" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="4050:4192" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="4427:4654" ph="SELECT topic... topic" />
-            <marker date="1517942827625" expanded="true" signature="4858:4936" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="5109:5207" ph="SELECT * FRO... rehearsal_question" />
-            <marker date="1517942827625" expanded="true" signature="5434:5567" ph="UPDATE topic... " />
-            <marker date="1517942827625" expanded="true" signature="5806:5949" ph="INSERT INTO rehearsal_question... " />
-            <marker date="1517942827625" expanded="true" signature="6210:6318" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="186:252" ph="SELECT * FRO... dictionary" />
+            <marker date="1517943834122" expanded="true" signature="468:634" ph="INSERT INTO dictionary" />
+            <marker date="1517943834122" expanded="true" signature="935:1008" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1178:1230" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1178:1279" ph="DELETE FROM topic... " />
+            <marker date="1517943834122" expanded="true" signature="1544:1763" ph="UPDATE dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="1550:1763" ph="DELETE FROM dictionary... " />
+            <marker date="1517943834122" expanded="true" signature="2125:2236" ph="INSERT INTO topic" />
+            <marker date="1517943834122" expanded="true" signature="2481:2554" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="2786:2887" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="3160:3296" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="3558:3744" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="3992:4084" ph="SELECT * FRO... topic" />
+            <marker date="1517943834122" expanded="true" signature="4244:4358" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="4529:4671" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="4906:5133" ph="SELECT topic... topic" />
+            <marker date="1517943834122" expanded="true" signature="5337:5415" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="5588:5686" ph="SELECT * FRO... rehearsal_question" />
+            <marker date="1517943834122" expanded="true" signature="5913:6046" ph="UPDATE topic... " />
+            <marker date="1517943834122" expanded="true" signature="6285:6428" ph="INSERT INTO rehearsal_question... " />
+            <marker date="1517943834122" expanded="true" signature="6689:6797" ph="DELETE FROM dictionary... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="150" column="62" lean-forward="true" selection-start-line="150" selection-start-column="62" selection-end-line="150" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>

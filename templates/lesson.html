@@ -2,6 +2,7 @@
 {% block content %}
     {% for data in datas %}
         <h1>{{ data.title }}</h1>
+        <a href="/tananyag/{{ data.topic_type}}/{{ data.topic_id }}/tananyag-szerkesztese"><button class="btn btn-light">Szerkesztés</button></a>
         {{ data.body|safe }}
     {% endfor %}
 {% endblock %}

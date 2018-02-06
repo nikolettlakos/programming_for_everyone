@@ -93,6 +93,17 @@ def add_topic_to_favourites(cursor, topic_type, topic_id, fav_or_not):
 
 
 @database_common.connection_handler
+def edit_topic_element(cursor, topic_type, topic_id, title, body):
+    cursor.execute(''' UPDATE topic
+                      SET topic_type = %(topic_type)s, title = %(title)s, body = %(body)s
+                      WHERE topic_type = %(topic_type)s AND topic_id = %(topic_id)s;''',
+                   {'topic_type': topic_type,
+                    'topic_id': topic_id,
+                    'title': title,
+                    'body': body})
+
+
+@database_common.connection_handler
 def get_favs(cursor):
     cursor.execute(''' SELECT * FROM topic
                     WHERE fav = 1
