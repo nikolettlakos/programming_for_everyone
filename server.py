@@ -22,7 +22,8 @@ def add_new_dictionary_element():
         hungarian = request.form['hungarian']
         english = request.form['english']
         meaning = request.form['meaning']
-        query_manager.add_new_dictionary_element(hungarian,english,meaning)
+        abbreviation_of_the_word = request.form['abbreviation']
+        query_manager.add_new_dictionary_element(hungarian, english, abbreviation_of_the_word, meaning)
         return redirect('/szotar')
     else:
         return render_template('dictionary_form.html')
@@ -39,8 +40,9 @@ def edit_dictionary_element(id_dictionary):
     if request.method == 'POST':
         hungarian_word = request.form['hungarian']
         english_word = request.form['english']
+        abbreviation_of_the_word = request.form['abbreviation']
         meaning = request.form['meaning']
-        query_manager.edit_element_form_dictionary(id_dictionary, hungarian_word, english_word, meaning)
+        query_manager.edit_element_form_dictionary(id_dictionary, hungarian_word, abbreviation_of_the_word, english_word, meaning)
         return redirect('/szotar')
     else:
         return render_template('dictionary_form.html')
@@ -112,6 +114,17 @@ def searching():
     search_phrase = request.args['search']
     search_data = query_manager.searching(search_phrase)
     return render_template('search_found.html', search_data=search_data)
+
+
+@app.route('/ismetles', methods=['GET', 'POST'])
+def get_rehearsal_questions():
+    rehearsal_question = query_manager.get_rehearsal_questions()
+    return render_template('rehearsal_question.html', rehearsal_question=rehearsal_question)
+
+@app.route('/ismetles/<question_id>', methods=['GET', 'POST'])
+def get_rehearsal_question_by_id(question_id):
+    datas = query_manager.get_rigth_rehearsal_question(question_id)
+    return render_template('answer_for_question.html', datas=datas)
 
 '''
 @app.route('/regisztracio', methods=['GET', 'POST'])

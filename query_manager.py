@@ -16,12 +16,13 @@ def dictionary(cursor):
 
 
 @database_common.connection_handler
-def add_new_dictionary_element(cursor, hungarian, english, meaning):
+def add_new_dictionary_element(cursor, hungarian, english, abbreviation, meaning):
 
-    cursor.execute('''INSERT INTO  dictionary(hungarian_word, english_word, meaning) 
-                      VALUES (%(hungarian)s, %(english)s, %(meaning)s);''',
+    cursor.execute('''INSERT INTO  dictionary(hungarian_word, english_word, abbreviation, meaning) 
+                      VALUES (%(hungarian)s, %(english)s, %(abbreviation)s, %(meaning)s);''',
                    {'hungarian': hungarian,
                     'english': english,
+                    'abbreviation': abbreviation,
                     'meaning': meaning})
 
 
@@ -41,14 +42,15 @@ def delete_element_form_topic(cursor, topic_type, topic_id):
 
 
 @database_common.connection_handler
-def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_word, meaning):
+def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_word, abbreviation, meaning):
 
     cursor.execute(''' UPDATE dictionary
-                      SET hungarian_word = %(hungarian_word)s, english_word = %(english_word)s, meaning = %(meaning)s
+                      SET hungarian_word = %(hungarian_word)s, english_word = %(english_word)s, abbreviation = %(abbreviation)s, meaning = %(meaning)s
                       WHERE dictionary_id = %(id)s;''',
                    {'hungarian_word': hungarian_word,
                     'english_word': english_word,
                     'meaning': meaning,
+                    'abbreviation': abbreviation,
                     'id': dictionary_id})
 
 
@@ -117,3 +119,20 @@ def searching(cursor, searching_phrase):
                       WHERE topic.title LIKE %(searching_phrase)s OR topic.body LIKE %(searching_phrase)s OR dictionary.meaning LIKE %(searching_phrase)s;''',
                    {'searching_phrase': '%' + searching_phrase + '%'})
     return cursor.fetchall()
+
+
+@database_common.connection_handler
+def get_rehearsal_questions(cursor):
+    cursor.execute(''' SELECT * FROM rehearsal_question
+                      ORDER BY question_title;''',)
+    return cursor.fetchall()
+
+
+@database_common.connection_handler
+def get_rigth_rehearsal_question(cursor, question_id):
+    cursor.execute("""
+                    SELECT * FROM rehearsal_question
+                    WHERE rehearsal_question_id = %(question_id)s; """,
+                   {'question_id': question_id})
+    data = cursor.fetchall()
+    return data

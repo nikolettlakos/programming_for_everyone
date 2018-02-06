@@ -1,0 +1,11 @@
+{% extends 'layout_base.html' %}
+{% block content %}
+<h1>Ismétlő kérdések</h1>
+<ul style="list-style-type: circle">
+    {% for data in rehearsal_question %}
+    <li>
+        <a href="/ismetles/{{ data.rehearsal_question_id }}">{{ data.question_title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
