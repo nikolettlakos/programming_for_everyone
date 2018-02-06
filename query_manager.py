@@ -10,14 +10,13 @@ def dictionary(cursor):
     cursor.execute("""
                     SELECT * FROM dictionary
                     ORDER BY english_word;
-                   """,)
+                   """, )
     data = cursor.fetchall()
     return data
 
 
 @database_common.connection_handler
 def add_new_dictionary_element(cursor, hungarian, english, abbreviation, meaning):
-
     cursor.execute('''INSERT INTO  dictionary(hungarian_word, english_word, abbreviation, meaning) 
                       VALUES (%(hungarian)s, %(english)s, %(abbreviation)s, %(meaning)s);''',
                    {'hungarian': hungarian,
@@ -43,7 +42,6 @@ def delete_element_form_topic(cursor, topic_type, topic_id):
 
 @database_common.connection_handler
 def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_word, abbreviation, meaning):
-
     cursor.execute(''' UPDATE dictionary
                       SET hungarian_word = %(hungarian_word)s, english_word = %(english_word)s, abbreviation = %(abbreviation)s, meaning = %(meaning)s
                       WHERE dictionary_id = %(id)s;''',
@@ -56,7 +54,6 @@ def edit_element_form_dictionary(cursor, dictionary_id, hungarian_word, english_
 
 @database_common.connection_handler
 def add_new_topic_element(cursor, title, body, topic_type):
-
     cursor.execute('''INSERT INTO  topic(title, body, topic_type) 
                       VALUES (%(title)s, %(body)s, %(topic_type)s);''',
                    {'title': title,
@@ -94,11 +91,12 @@ def add_topic_to_favourites(cursor, topic_type, topic_id, fav_or_not):
                     'topic_id': topic_id,
                     'fav': fav_or_not})
 
+
 @database_common.connection_handler
 def get_favs(cursor):
     cursor.execute(''' SELECT * FROM topic
                     WHERE fav = 1
-                    ORDER BY title ASC;''',)
+                    ORDER BY title ASC;''', )
     data = cursor.fetchall()
     return data
 
@@ -107,7 +105,7 @@ def get_favs(cursor):
 def get_favs_from_rehearsal_question(cursor):
     cursor.execute(''' SELECT * FROM rehearsal_question
                     WHERE fav = 1
-                    ORDER BY question_title ASC;''',)
+                    ORDER BY question_title ASC;''', )
     data = cursor.fetchall()
     return data
 
@@ -133,7 +131,7 @@ def searching(cursor, searching_phrase):
 @database_common.connection_handler
 def get_rehearsal_questions(cursor):
     cursor.execute(''' SELECT * FROM rehearsal_question
-                      ORDER BY question_title;''',)
+                      ORDER BY question_title;''', )
     return cursor.fetchall()
 
 
@@ -154,3 +152,11 @@ def add_question_to_favourites(cursor, question_id, fav_or_not):
                       WHERE rehearsal_question_id = %(question_id)s;''',
                    {'question_id': question_id,
                     'fav': fav_or_not})
+
+
+@database_common.connection_handler
+def add_new_rehearsal_question_element(cursor, question_title, answer_for_question):
+    cursor.execute('''INSERT INTO rehearsal_question(question_title, answer_for_question) 
+                      VALUES (%(question_title)s, %(answer_for_question)s);''',
+                   {'question_title': question_title,
+                    'answer_for_question': answer_for_question})

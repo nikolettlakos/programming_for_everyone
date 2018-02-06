@@ -1,6 +1,7 @@
 {% extends 'layout_base.html' %}
 {% block content %}
 <h1>Ismétlő kérdések</h1>
+<a href="/uj-ismetlo-kerdes"><button class="btn btn-light">Új kérdés</button></a>
 <ul style="list-style-type: none">
     {% for data in rehearsal_question %}
     <li>

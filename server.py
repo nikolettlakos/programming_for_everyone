@@ -50,7 +50,6 @@ def edit_dictionary_element(id_dictionary):
 
 @app.route('/uj-cikk', methods=['GET', 'POST'])
 def add_new_topic():
-
     if request.method == "POST":
         title = request.form['title']
         body = request.form['body']
@@ -139,6 +138,17 @@ def add_question_to_fav(question_id):
         else:
             query_manager.add_question_to_favourites(question_id, 0)
             return redirect('/kedvencek')
+
+
+@app.route('/uj-ismetlo-kerdes', methods=['GET', 'POST'])
+def new_rehearsal_question():
+    if request.method == "POST":
+        title = request.form['title']
+        answer = request.form['answer']
+        query_manager.add_new_rehearsal_question_element(title, answer)
+        return redirect('/ismetles')
+    else:
+        return render_template('rehearsal_question_form.html')
 
 '''
 @app.route('/regisztracio', methods=['GET', 'POST'])
