@@ -1,9 +1,14 @@
 {% extends 'layout_base.html' %}
 {% block content %}
 <h1>Ismétlő kérdések</h1>
-<ul style="list-style-type: circle">
+<ul style="list-style-type: none">
     {% for data in rehearsal_question %}
     <li>
+        {% if data.fav == 0 %}
+            <a href="/ismetles/{{ data.rehearsal_question_id }}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy a kedvencekhez adod?')"><i class="far fa-star"></i></a>
+        {% else %}
+            <a href="/ismetles/{{ data.rehearsal_question_id }}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy törlöd a kedvencek közül?')"><i class="fas fa-star"></i></a>
+        {% endif %}
         <a href="/ismetles/{{ data.rehearsal_question_id }}">{{ data.question_title }}</a>
     </li>
     {% endfor %}

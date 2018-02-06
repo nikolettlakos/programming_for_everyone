@@ -93,8 +93,9 @@ def add_topic_to_fav(topic_type, topic_id):
 
 @app.route('/kedvencek', methods=['GET', 'POST'])
 def fav_page():
-    favs = query_manager.get_favs()
-    return render_template('fav.html', favs=favs)
+    favs_topic = query_manager.get_favs()
+    favs_question = query_manager.get_favs_from_rehearsal_question()
+    return render_template('fav.html', favs=favs_topic, favs_question=favs_question)
 
 
 @app.route('/tananyag/<topic_type>/<topic_id>/megtanult', methods=['GET', 'POST'])
@@ -121,10 +122,23 @@ def get_rehearsal_questions():
     rehearsal_question = query_manager.get_rehearsal_questions()
     return render_template('rehearsal_question.html', rehearsal_question=rehearsal_question)
 
+
 @app.route('/ismetles/<question_id>', methods=['GET', 'POST'])
 def get_rehearsal_question_by_id(question_id):
     datas = query_manager.get_rigth_rehearsal_question(question_id)
     return render_template('answer_for_question.html', datas=datas)
+
+
+@app.route('/ismetles/<question_id>/kedvencnek-jeloles', methods=['GET', 'POST'])
+def add_question_to_fav(question_id):
+    datas = query_manager.get_rigth_rehearsal_question(question_id)
+    for data in datas:
+        if data['fav'] == 0:
+            query_manager.add_question_to_favourites(question_id, 1)
+            return redirect('/kedvencek')
+        else:
+            query_manager.add_question_to_favourites(question_id, 0)
+            return redirect('/kedvencek')
 
 '''
 @app.route('/regisztracio', methods=['GET', 'POST'])

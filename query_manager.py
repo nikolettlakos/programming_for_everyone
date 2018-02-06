@@ -98,7 +98,16 @@ def add_topic_to_favourites(cursor, topic_type, topic_id, fav_or_not):
 def get_favs(cursor):
     cursor.execute(''' SELECT * FROM topic
                     WHERE fav = 1
-                    ORDER BY topic_type ASC;''',)
+                    ORDER BY title ASC;''',)
+    data = cursor.fetchall()
+    return data
+
+
+@database_common.connection_handler
+def get_favs_from_rehearsal_question(cursor):
+    cursor.execute(''' SELECT * FROM rehearsal_question
+                    WHERE fav = 1
+                    ORDER BY question_title ASC;''',)
     data = cursor.fetchall()
     return data
 
@@ -136,3 +145,12 @@ def get_rigth_rehearsal_question(cursor, question_id):
                    {'question_id': question_id})
     data = cursor.fetchall()
     return data
+
+
+@database_common.connection_handler
+def add_question_to_favourites(cursor, question_id, fav_or_not):
+    cursor.execute(''' UPDATE rehearsal_question
+                      SET fav = %(fav)s
+                      WHERE rehearsal_question_id = %(question_id)s;''',
+                   {'question_id': question_id,
+                    'fav': fav_or_not})

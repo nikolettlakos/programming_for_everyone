@@ -8,4 +8,11 @@
         </li>
     </ul>
     {% endfor %}
+    {% for fav in favs_question %}
+    <ul style="list-style-type: circle">
+        <li>
+            <a href="/ismetles/{{ fav.rehearsal_question_id}}">{{ fav.question_title }}</a>
+        </li>
+    </ul>
+    {% endfor %}
 {% endblock %}}
