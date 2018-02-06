@@ -17,3 +17,7 @@ a {
     color: #67596b;
     text-decoration: none;
 }
+
+th {
+    text-align: center;
+}

@@ -160,3 +160,10 @@ def add_new_rehearsal_question_element(cursor, question_title, answer_for_questi
                       VALUES (%(question_title)s, %(answer_for_question)s);''',
                    {'question_title': question_title,
                     'answer_for_question': answer_for_question})
+
+
+@database_common.connection_handler
+def delete_element_form_rehearsal_question(cursor, rehearsal_question_id):
+    cursor.execute(''' DELETE FROM rehearsal_question
+                      WHERE rehearsal_question_id = %(rehearsal_question_id)s;''',
+                   {'rehearsal_question_id': rehearsal_question_id})

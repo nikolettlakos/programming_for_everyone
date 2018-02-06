@@ -150,6 +150,13 @@ def new_rehearsal_question():
     else:
         return render_template('rehearsal_question_form.html')
 
+
+@app.route('/ismetles/<rehearsal_question_id>/torles', methods=['GET', 'POST'])
+def delete_rehearsal_question_item(rehearsal_question_id):
+    query_manager.delete_element_form_rehearsal_question(rehearsal_question_id)
+    return redirect('/ismetles')
+
+
 '''
 @app.route('/regisztracio', methods=['GET', 'POST'])
 def registration():

@@ -5,6 +5,7 @@
 <ul style="list-style-type: none">
     {% for data in rehearsal_question %}
     <li>
+        <a href="/ismetles/{{ data.rehearsal_question_id}}/torles" onclick="confirm('Biztos, hogy törölni szeretnéd?')"><i class="fas fa-trash-alt"></i></a>
         {% if data.fav == 0 %}
             <a href="/ismetles/{{ data.rehearsal_question_id }}/kedvencnek-jeloles" onclick="confirm('Biztos, hogy a kedvencekhez adod?')"><i class="far fa-star"></i></a>
         {% else %}
