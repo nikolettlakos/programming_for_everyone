@@ -85,7 +85,7 @@ def edit_lesson(topic_type, topic_id):
 @app.route('/tananyag/<topic_type>/<topic_id>/tananyag-torlese', methods=['GET', 'POST'])
 def delete_topic(topic_type, topic_id):
     query_manager.delete_element_form_topic(topic_type, topic_id)
-    return redirect('/')
+    return redirect('/tananyag/'+topic_type)
 
 
 @app.route('/tananyag/<topic_type>/<topic_id>/kedvencnek-jeloles', methods=['GET', 'POST'])
